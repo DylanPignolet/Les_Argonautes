@@ -25,6 +25,7 @@
                 class="form"
         />
         <v-btn
+                  class="btn"
                   @click="argonaute"
                   :disabled="!valid"               
                 >
@@ -135,6 +136,12 @@ h1, h2 {
 label {
   display: block;
   margin-bottom: 0.5em;
+}
+
+.btn {
+  background: #f76c6c !important;
+  color: white;
+  margin-top: 10px;
 }
 
 .member-list {
