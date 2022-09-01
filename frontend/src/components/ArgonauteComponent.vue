@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container classe="container" fluid>
     <v-app>
       <header>
         <h1>
@@ -38,10 +38,6 @@
         <div v-for="argonaute in argonautes" v-bind:key="argonaute.id" class="member-item">{{argonaute.name}}</div>
       </section>
     </main>
-
-    <footer>
-      <p>Réalisé par Jason en Anthestérion de l'an 515 avant JC</p>
-    </footer>
   </v-container>
 </template>
 
@@ -102,6 +98,12 @@ export default {
   min-height: 30vh !important;
 }
 
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -135,6 +137,11 @@ label {
   margin-bottom: 0.5em;
 }
 
+.member-list {
+  text-align: center;
+  margin: 20px 0px;
+}
+
 .new-member-form {
   margin: 2em 0 4em 0;
   text-align: center;
@@ -142,13 +149,16 @@ label {
 
 .member-item {
   padding: 0.25em 0;
+  width: 33.33%;
+  float: left;
 }
 
 footer {
-  margin-top: 2em;
-  text-align: center;
-  color: #fff;
-  background: #f76c6c;
-  padding: 0.25em 0;
+  margin-top: auto!important;
+  text-align: center !important;
+  color: #fff !important;
+  background: #f76c6c !important;
+  padding: 0.25em 0 !important;
+  position: fixed !important;
 } 
 </style>

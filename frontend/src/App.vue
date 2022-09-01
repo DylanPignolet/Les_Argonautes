@@ -5,7 +5,8 @@
         <router-view />
       </div>
     </div>
-    <v-footer>
+    <v-footer class="footer">
+      <p>Réalisé par Jason en Anthestérion de l'an 515 avant JC</p>
     </v-footer>
   </div>
 </template>
@@ -48,6 +49,7 @@ export default {
   bottom: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 footer {
